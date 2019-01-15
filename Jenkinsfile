@@ -13,6 +13,7 @@ def PATH
 // credentials needs to be configured in Jenkins accordingly.
 def CREDENTIALS_ID
 
+
 node() {
 
     deleteDir()
