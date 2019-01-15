@@ -12,10 +12,6 @@ node() {
 							                             ]
   }
 
-  stage('build') {
-      mtaBuild script: this
-  }
-
   stage('solmanUpload') {
       transportRequestUploadFile script:this
   }
