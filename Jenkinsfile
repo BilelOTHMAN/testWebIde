@@ -5,7 +5,7 @@ node() {
   stage('prepare') {
 
       checkout scm
-	  setupCommonPipelineEnvironment script: this, configFile: '.pipeline/config.yml'
+	  setupCommonPipelineEnvironment script: this, configFile: 'pipeline/config.yml'
 	  prepareDefaultValues script: this
       checkChangeInDevelopment script: this
   }
