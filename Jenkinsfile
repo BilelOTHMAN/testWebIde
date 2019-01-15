@@ -8,8 +8,8 @@ node() {
 
       checkChangeInDevelopment script: this
 								       changeManagement: [
-							                               endpoint: 'ns3026258.ovee.fr'
 							                               credentialsId: '12dd7492-a47d-4723-955d-83340217241f'
+							                               endpoint: 'ns3026258.ovee.fr'
 							                               type: 'SOLMAN'
 							                             ]
   }
