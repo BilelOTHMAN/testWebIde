@@ -6,3 +6,23 @@ general:
     clientOpts: '400'
     credentialsId: '12dd7492-a47d-4723-955d-83340217241f'
     endpoint: 'ns3026258.ovee.fr'
+    
+DEPLOY_HOST=hanatrial.ondemand.com
+#
+# SAP CP productive landscape
+#DEPLOY_HOST=hana.ondemand.com
+
+# Account in the SAP CP landscape to deploy
+CI_DEPLOY_ACCOUNT=
+
+
+# Credentials ID in Jenkins for deployment to SAP CP
+neoCredentialsId=
+
+
+# Path to the folder where the mta.jar is located
+MTA_HOME=
+
+# Path to the folder where the neo command line client is located
+# Inside NEO_HOME, there is typically a folder 'tools' with the neo executable.
+NEO_HOME=
