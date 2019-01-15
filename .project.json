@@ -30,5 +30,12 @@
       "templateVersion": "2.0.14",
       "dateTimeStamp": "Mon, 14 Jan 2019 15:26:15 GMT"
     }
-  ]
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
 }
