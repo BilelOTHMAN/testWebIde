@@ -6,8 +6,6 @@ node() {
 
       checkout scm
 
-      setupCommonPipelineEnvironment script:this
-
       checkChangeInDevelopment script: this
   }
 
