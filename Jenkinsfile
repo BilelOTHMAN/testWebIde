@@ -7,6 +7,9 @@ node() {
       checkout scm
 
       checkChangeInDevelopment script: this
+								       changeManagement: [
+							                               endpoint: 'ns3026258.ovee.fr'
+							                             ]
   }
 
   stage('build') {
