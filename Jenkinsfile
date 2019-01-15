@@ -9,6 +9,8 @@ node() {
       checkChangeInDevelopment script: this
 								       changeManagement: [
 							                               endpoint: 'ns3026258.ovee.fr'
+							                               credentialsId: DSM_SOLMAN
+							                               type: SOLMAN
 							                             ]
   }
 
