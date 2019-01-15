@@ -1,0 +1,11 @@
+#Steps Specific Configuration
+general:
+  changeManagement:
+    endpoint: 'http://ns3026258.ovee.fr:50000/sap/opu/odata/sap/ZSM_RM_COCKPIT_V2_SRV'
+    credentialsId: '12dd7492-a47d-4723-955d-83340217241f'
+    type: 'SOLMAN'
+steps:
+  mtaBuild:
+    buildTarget: 'NEO'
+  transportRequestUploadFile:
+    applicationId: 'HCP'

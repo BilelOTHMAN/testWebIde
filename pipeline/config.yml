@@ -1,9 +1,0 @@
-general:
-  productiveBranch: 'master'
-  collectTelemetryData: true
-  changeManagement:
-    type: 'SOLMAN'
-    clientOpts: '400'
-    credentialsId: '12dd7492-a47d-4723-955d-83340217241f'
-    endpoint: 'ns3026258.ovee.fr'
-    

@@ -1,17 +1,22 @@
-@Library('piper-lib-os') _
+
+@Library('piper-library-os') _
 
 node() {
-  def mtarFileName
+
   stage('prepare') {
-
-      checkout scm
-	  setupCommonPipelineEnvironment script: this, configFile: 'pipeline/config.yml'
-	  prepareDefaultValues script: this
-	  mtarFileName = mtaBuild script:this, buildTarget: 'NEO'
+    checkout scm
+    setupCommonPipelineEnvironment script:this
+    checkChangeInDevelopment script: this
   }
 
-  stage('solmanUpload') {
-      transportRequestUploadFile script:this
-    							filePath : mtarFileName
+  stage('buildMta') {
+    mtaBuild script: this
   }
+
+  stage('uploadToTransportRequest') {
+    transportRequestCreate script: this
+    transportRequestUploadFile script:this
+    transportRequestRelease script: this
+  }
+
 }
