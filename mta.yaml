@@ -1,5 +1,5 @@
 _schema-version: "2.0.0"
-ID: "MY_MTA"
+ID: "ztest"
 version: 1.0.0
 
 parameters:
@@ -10,8 +10,7 @@ modules:
     type: html5
     path: .
     parameters:
-       version: 1.0.0-${timestamp}
+       version: 1.0.0
     build-parameters:
       builder: grunt
       build-result: dist
-      
