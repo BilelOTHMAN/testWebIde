@@ -7,7 +7,7 @@ parameters:
 
 modules:
   - name: "ZTEST"
-    type: html5
+    type: zip
     path: .
     parameters:
        version: 1.0.0
