@@ -60,7 +60,6 @@ node() {
   stage("Build Fiori App"){
     dir(SRC){
       withEnv(["http_proxy=${proxy}", "https_proxy=${httpsProxy}"]) {
-    	echo "'${mtaJarLocation}'"
     	echo "'${MTA_JAR_LOCATION}'"
         mtaBuild script: this, mtaJarLocation: MTA_JAR_LOCATION, buildTarget: 'NEO'
       }
