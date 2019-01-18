@@ -9,5 +9,3 @@ steps:
     buildTarget: 'NEO'
   transportRequestUploadFile:
     applicationId: 'HCP'
-    changeDocumentId: '8000000432'
-    TransportRequestId: 'DSMK901320'

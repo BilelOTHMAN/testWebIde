@@ -60,8 +60,10 @@ node() {
 
   stage("Deploy on Solman"){
      transportRequestUploadFile script:this,
-                           applicationId: '001',
-                           filePath: './'
+	                            applicationId: '001',
+	                            filePath: './',
+	                            changeDocumentId: '8000000432',
+    							TransportRequestId: 'DSMK901320'
   }
  
 }
