@@ -58,7 +58,6 @@ node() {
   }
 
 
-  
   stage("Deploy on Solman"){
      transportRequestUploadFile script:this,
                            applicationId: '001',
