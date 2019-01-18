@@ -67,6 +67,13 @@ node() {
     }
   }
   
+  stage("Deploy on Solman"){
+     checkChangeInDevelopment script:this
+     transportRequestUploadFile script:this,
+                           applicationId: '001',
+                           filePath: './',
+  }
+  
   stage("Deploy Fiori App"){
     dir(SRC){
       withEnv(["http_proxy=${proxy}", "https_proxy=${httpsProxy}"]) {
