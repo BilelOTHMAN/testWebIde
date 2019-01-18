@@ -71,7 +71,7 @@ node() {
      checkChangeInDevelopment script:this
      transportRequestUploadFile script:this,
                            applicationId: '001',
-                           filePath: './',
+                           filePath: './'
   }
   
   stage("Deploy Fiori App"){
