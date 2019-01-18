@@ -63,7 +63,7 @@ node() {
 	                            applicationId: '001',
 	                            filePath: './',
 	                            changeDocumentId: '8000000432',
-    							TransportRequestId: 'DSMK901320'
+    							transportRequestId: 'DSMK901320'
   }
  
 }
