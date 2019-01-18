@@ -62,7 +62,6 @@ node() {
       withEnv(["http_proxy=${proxy}", "https_proxy=${httpsProxy}"]) {
     	echo "'${MTA_JAR_LOCATION}'"
     	echo "'${PATH}'"
-        mtaBuild script: this, mtaJarLocation: MTA_JAR_LOCATION, buildTarget: 'NEO'
       }
     }
   }
